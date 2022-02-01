@@ -16,6 +16,11 @@ public class Move : MonoBehaviour
     void Update()
     {
         Movement();
+
+        if(transform.position.x > 20f){
+            Destroy(gameObject);
+        }
+        
     }
 
     private void Movement()
